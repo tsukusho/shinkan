@@ -1,0 +1,187 @@
+/* 全体のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    overflow-x: hidden;
+}
+
+/* スプラッシュスクリーン */
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+    transition: opacity 1s ease, display 1s ease;
+}
+
+#splash_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 劇団ロゴスタイル */
+#theater-logo {
+    position: absolute;
+    top: 50px;
+    width: 180px;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+/* テキストアニメーショングループ */
+#text-animation-group {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+/* タイトル画像 */
+#splash-title {
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto 60px;
+    transition: opacity 2s ease;
+}
+
+/* タイピングテキスト（左上） */
+#typing-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 300px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    transition: opacity 1.5s ease;
+}
+
+/* タイピングテキスト（右上） */
+#typing-text-2 {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    max-width: 300px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    transition: opacity 1.5s ease;
+}
+
+/* タイピングテキスト（左下） */
+#typing-text-3 {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    max-width: 300px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    transition: opacity 1.5s ease;
+}
+
+/* タイピングテキスト（右下） */
+#typing-text-4 {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    max-width: 300px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    transition: opacity 1.5s ease;
+}
+
+/* 最終テキスト（中央） */
+#typing-text-final {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+/* メインコンテンツ */
+#main-content {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    #theater-logo {
+        width: 140px;
+    }
+    
+    #splash-title {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    
+    #typing-text,
+    #typing-text-2,
+    #typing-text-3,
+    #typing-text-4 {
+        max-width: 200px;
+        font-size: 14px;
+    }
+    
+    #typing-text-final {
+        width: 90%;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #theater-logo {
+        width: 120px;
+        top: 30px;
+    }
+    
+    #splash-title {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    #typing-text,
+    #typing-text-2,
+    #typing-text-3,
+    #typing-text-4 {
+        max-width: 160px;
+        font-size: 12px;
+    }
+    
+    #typing-text-final {
+        width: 95%;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+} 

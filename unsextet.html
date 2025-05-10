@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンセクステット</title>
+    <link rel="stylesheet" href="tsukusho_unsextet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 固定CTAボタン -->
+    <div class="fixed-cta">
+        <a href="https://tiget.net/users/886242" class="cta-button reservation" target="_blank">予約サイト</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMTRmIX22XDg4rRlysWmf0_RYZG55_CSajmJM4GZZNfIgHJA/viewform?usp=sharing" class="cta-button streaming" target="_blank">配信予約</a>
+    </div>
+    
+    <!-- スプラッシュスクリーン -->
+    <div id="splash">
+        <!-- スキップボタン -->
+        <div id="skip-button">Skip &gt;</div>
+        
+        <div id="splash_box">
+            <!-- 劇団ロゴ -->
+            <img id="theater-logo" src="header.png" alt="劇団筑波小劇場">
+            
+            <!-- テキストアニメーショングループ -->
+            <div id="text-animation-group">
+                <!-- タイトル -->
+                <img id="splash-title" src="title.png" alt="アンセクステット">
+                
+                <!-- テキストアニメーション（左上） -->
+                <div id="typing-text"></div>
+                
+                <!-- テキストアニメーション（右上） -->
+                <div id="typing-text-2"></div>
+                
+                <!-- テキストアニメーション（左下） -->
+                <div id="typing-text-3"></div>
+                
+                <!-- テキストアニメーション（右下） -->
+                <div id="typing-text-4"></div>
+            </div>
+            
+            <!-- 最終テキストアニメーション（中央） -->
+            <div id="typing-text-final"></div>
+        </div>
+    </div>
+    
+    <!-- メインコンテンツ -->
+    <div id="main-content">
+        <div class="content">
+            
+            <div class="schedule-inner">
+              <img src="start.png" class="schedule-start">
+              <div class="schedule">
+                場所 : 5C316教室<br>
+                5/10　:　<time>19:00</time>　　<a href="https://tiget.net/users/886242" target="_blank">予約</a><br>
+                5/11　:　<time>11:00</time>　<time>14:30</time>　　<a href="https://tiget.net/users/886242" target="_blank">予約</a>
+                <br>
+                後日配信　　<a href="https://docs.google.com/forms/d/e/1FAIpQLScMTRmIX22XDg4rRlysWmf0_RYZG55_CSajmJM4GZZNfIgHJA/viewform?usp=sharing" target="_blank">予約</a>
+              </div>
+              <img src="end.png" class="schedule-end">
+            </div>
+
+            <div class="member-inner">
+              <div class="member">
+                <span class="title">アンセクステット</span>
+                <span class="nemokano" style="color: #ff3333; font-weight: bold; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">脚本・演出　根本花音</span>
+                <span class="nemokano-sub">演出補佐　井口可憐 <br>寺嶋みち香　宮﨑陽彩 <br>松長かのん</span>
+                
+                <span class="actor">役者</span>
+                <span class="cast-line">根本大輝 新拓真</span>
+                <span class="cast-line">百海結妃 遠山心晴 能澤楓</span>
+                <span class="cast-line">橋本雄矢</span>
+                <span class="cast-line">関口きり</span>
+                
+                <span class="cast-line">制作　　海老原和奏 井口可憐</span>
+                <span class="cast-line">制作補佐　　新拓真 長田真弥 芦澤那南 中山陽援</span>
+                <span class="cast-line">舞台監督　　遠山心晴 吉武更紗 橋本雄矢</span>
+                <span class="cast-line">舞台監督補佐　　松長かのん</span>
+                <span class="cast-line">照明　　水野航瑠 長田真弥</span>
+                <span class="cast-line">照明補佐　　寺嶋みち香</span>
+                <span class="cast-line">音響　　北尾美來 井口可憐 杉田彩葉 和久田壱成</span>
+                <span class="cast-line">音響補佐　　野尻海斗 青山皓太</span>
+                <span class="cast-line">記録　　北尾美來 宮﨑陽彩</span>
+                <span class="cast-line">web　　百海結妃 松村勇汰</span>
+                <span class="cast-line">映像　　海老原和奏 関口きり 青山皓太 松村勇汰</span>
+                <span class="cast-line">宣伝美術　　井口可憐 吉武更紗 塙桃花 柴戸彩杏</span>
+                <span class="cast-line">宣伝美術補佐　　松長かのん</span>
+                <span class="cast-line">衣装　　遠山心晴 和久田壱成 新拓真</span>
+                <span class="cast-line">小道具　　北尾美來 水野航瑠 能澤楓</span>
+                <span class="cast-line">小道具補佐　　松長かのん</span>
+                <span class="cast-line">舞台美術　　海老原和奏 松村勇汰 能澤楓</span>
+                <span class="cast-line">広報　　寺嶋みち香</span>
+                <span class="cast-line">フリスタ　　佐藤朱莉 佐々木奎</span>
+              </div>
+            </div>
+
+
+            <div class="footer">
+              <div class="cta-buttons">
+                <a href="https://tiget.net/users/886242" class="cta-button reservation" target="_blank">予約サイト</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMTRmIX22XDg4rRlysWmf0_RYZG55_CSajmJM4GZZNfIgHJA/viewform?usp=sharing" class="cta-button streaming" target="_blank">配信予約</a>
+              </div>
+              <p class="copyright">
+                &copy; 2025 劇団筑波小劇場
+              </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="tsukusho_unsextet.js"></script>
+</body>
+</html>
